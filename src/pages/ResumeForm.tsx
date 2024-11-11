@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
 import { TextArea } from '../components/ui/TextArea';
+import { Navigation } from '../components/Navigation';
 
 const formSteps = [
   {
@@ -71,7 +72,6 @@ export default function ResumeForm() {
     if (currentStep < formSteps.length - 1) {
       setCurrentStep(prev => prev + 1);
     } else {
-      // Navigate to preview page with form data
       navigate('/resume/preview', { state: { formData } });
     }
   };
@@ -85,8 +85,9 @@ export default function ResumeForm() {
   const currentFields = formSteps[currentStep].fields;
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50">
+      <Navigation />
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white rounded-lg shadow-sm p-8">
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900">

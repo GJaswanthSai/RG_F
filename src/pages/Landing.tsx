@@ -1,12 +1,14 @@
 import { FileText } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
+import { Navigation } from '../components/Navigation';
 
 export default function Landing() {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+      <Navigation />
       <div className="container mx-auto px-4 py-16">
         {/* Hero Section */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">

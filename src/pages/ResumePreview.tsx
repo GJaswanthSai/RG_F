@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Download, ArrowLeft } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { Button } from '../components/ui/Button';
+import { Navigation } from '../components/Navigation';
 
 export default function ResumePreview() {
   const location = useLocation();
@@ -10,13 +11,10 @@ export default function ResumePreview() {
   const skills = formData.skills?.split(',').map((skill: string) => skill.trim()) || [];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-6 flex justify-between items-center">
-          <Button variant="secondary" onClick={() => navigate('/dashboard')}>
-            <ArrowLeft className="w-5 h-5 mr-2" />
-            Back to Dashboard
-          </Button>
+    <div className="min-h-screen bg-gray-50">
+      <Navigation />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="mb-6 flex justify-end">
           <Button>
             <Download className="w-5 h-5 mr-2" />
             Download PDF

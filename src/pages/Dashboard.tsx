@@ -1,22 +1,14 @@
 import { useNavigate } from 'react-router-dom';
-import { Plus, Edit, ArrowLeft } from 'lucide-react';
-import { Button } from '../components/ui/Button';
+import { Plus, Edit } from 'lucide-react';
+import { Navigation } from '../components/Navigation';
 
 export default function Dashboard() {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-indigo-50">
+      <Navigation />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Button
-          variant="secondary"
-          onClick={() => navigate('/')}
-          className="mb-8"
-        >
-          <ArrowLeft className="w-5 h-5 mr-2" />
-          Back to Home
-        </Button>
-
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8">
           <div className="mb-10">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">Resume Dashboard</h1>
