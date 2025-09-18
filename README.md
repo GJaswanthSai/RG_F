@@ -10,7 +10,7 @@ This repository showcases the front-end user interface and design for a potentia
 
 -Responsive Design: Adapts to various screen sizes
 
-### Technologies Used
+### Technologies Used🛠
 
 - React.js: For building the user interface.
 
