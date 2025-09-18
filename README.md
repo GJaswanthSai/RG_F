@@ -4,9 +4,9 @@ This repository showcases the front-end user interface and design for a potentia
 
 ### Features
 
--UI/UX Demonstration: A complete front-end layout for a resume builder.
--Input Field Examples: Illustrates how user input forms would look and behave.
--Responsive Design: Adapts to various screen sizes.
+-UI/UX Demonstration: A complete front-end layout for a resume builder
+-Input Field Examples: Illustrates how user input forms would look and behave
+-Responsive Design: Adapts to various screen sizes
 
 ### Technologies Used
 
